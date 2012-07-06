@@ -432,3 +432,56 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/trackstar/gii/crud.html
 ---
+2012/07/05 12:14:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "issue" was not found.' in /opt/lampp/htdocs/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('issue')
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /opt/lampp/htdocs/trackstar/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/trackstar/issue
+HTTP_REFERER=http://localhost/trackstar/gii/crud
+---
+2012/07/05 12:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('index.html')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('index.html')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index.htm...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/issue/index.html
+---
+2012/07/05 12:14:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update.html".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('update.html')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('update.html')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/update.ht...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/issue/update.html
+---
+2012/07/05 12:15:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /opt/lampp/htdocs/yii/framework/web/CController.php:337
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#9 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/update')
+#10 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /opt/lampp/htdocs/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/issue/update
+HTTP_REFERER=http://localhost/trackstar/site/login
+---
